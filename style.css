@@ -1,0 +1,41 @@
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  margin: 0;
+}
+
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: 150px 1fr 50px;
+}
+
+.header {
+  grid-column: 2/3;
+}
+
+.sidebar {
+  grid-row: 1/3;
+  background-color: #b940c7;
+}
+
+.content {
+  background-color: rgb(195, 195, 195);
+}
+
+.footer {
+  grid-column: 1/3;
+}
+
+img[src$='.svg'] {
+  height: 20px;
+}
+
+img.pfp {
+  height: 35px;
+  border-radius: 100%;
+}
